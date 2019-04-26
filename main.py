@@ -1,3 +1,9 @@
+# ********************************************************************************************
+# Copyleft Mike Haggerty (2019)
+# Feel free to shameless steal, but please apply credit where credit is due!
+# ********************************************************************************************
+
+
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_core.handler_input import HandlerInput
@@ -9,6 +15,8 @@ from modules.garage_api import get_garage_door_status, get_garage_heat_index, ge
 
 
 skill_name = "Garage Door"
+# This skill was created to work with 2 GarageMotes that I choose to verbally label as "small" and
+# "large".  These align with the Amazon Alexa skill "slot" values.
 door_1_name = "large"
 door_2_name = "small"
 

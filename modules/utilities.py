@@ -1,3 +1,10 @@
+# ********************************************************************************************
+# Shamelessly stolen from Jeff Kassel by Mike Haggerty (2019)
+# As of this publish there are no known public versions of this file I stole from Jeff
+# I also do not know if this was shameless stolen from others by Jeff
+# No known license from Jeff's work, but if there is, it would be presiding.
+# ********************************************************************************************
+
 import json
 
 

@@ -1,0 +1,130 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "garage door",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Garage_Door_Close_Intent",
+                    "slots": [
+                        {
+                            "name": "which_door",
+                            "type": "which_door"
+                        }
+                    ],
+                    "samples": [
+                        "close",
+                        "close the {which_door} door",
+                        "close the {which_door} garage"
+                    ]
+                },
+                {
+                    "name": "Garage_Door_Open_Intent",
+                    "slots": [
+                        {
+                            "name": "which_door",
+                            "type": "which_door"
+                        }
+                    ],
+                    "samples": [
+                        "to open",
+                        "open {which_door} door",
+                        "open {which_door} garage"
+                    ]
+                },
+                {
+                    "name": "Garage_Door_Status_Intent",
+                    "slots": [
+                        {
+                            "name": "which_door",
+                            "type": "which_door"
+                        }
+                    ],
+                    "samples": [
+                        "to report status on {which_door} door",
+                        "to report status",
+                        "to report status on {which_door} doors",
+                        "report status on {which_door} garage",
+                        "report status on the {which_door} garage",
+                        "report status on the {which_door} door",
+                        "is the garage door closed",
+                        "is the garage door open"
+                    ]
+                },
+                {
+                    "name": "Garage_Weather_Intent",
+                    "slots": [],
+                    "samples": [
+                        "report weather",
+                        "report temperature"
+                    ]
+                },
+                {
+                    "name": "No_Intent",
+                    "slots": [],
+                    "samples": [
+                        "No",
+                        "Nope",
+                        "No thank you"
+                    ]
+                },
+                {
+                    "name": "Yes_Intent",
+                    "slots": [],
+                    "samples": [
+                        "Yes",
+                        "OK",
+                        "Please",
+                        "Yes please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "which_door",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "large",
+                                "synonyms": [
+                                    "two"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "small",
+                                "synonyms": [
+                                    "one"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "both",
+                                "synonyms": [
+                                    "all"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
