@@ -22,6 +22,8 @@ In order to implement this project you should have an existing GarageMote operat
   * TODO: figure out how to present diff in Github/README
 * Modify settings.json5 to add additional settings - call out https://github.com/LowPowerLab/RaspberryPi-Gateway and add diff!
   * TODO: Add example file... without any personal info!
+* Merge metrics.diff into metrics.js
+  * Umm, sure it's possible TODO: look up the code dummy!
 * Deploy Python Code to AWS Lambda
   * Ensure you a VirtualEnv installed 
   * Ensure you have all requirements installed
