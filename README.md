@@ -5,10 +5,11 @@
 This project enables the LowPowerLab GarageMote to be controlled via an Amazon Echo device.  I extended the IoT Gateway created by Felix Rusu (see Links below) to allow an Amazon Echo "Alexa" device to control the GarageMote.
 
 ## Equipment Needed
-* Raspberry Pi
+*Note: I wrote this project to support 2 GarageMotes, it could be easily be modified to support 1 or 3 (or more) doors.*
 * 2 x LowPowerLab GarageMote
 * 2 x LowPowerLab Moteino
 * 1 x LowPowerLab MightyHat or Moteino (for base station)
+* 1 x Raspberry Pi (for IoT Gateway)
 
 ## Details
 
