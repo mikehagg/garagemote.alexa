@@ -1,0 +1,11 @@
+{
+  "welcome": "<speak>Welcome to your Garage Door!</speak>",
+  "garage_door_status_both": "<speak><p>The large garage door is {{ ld_state }}, and the small garage door is {{ sd_state }}</p></speak>",
+  "garage_door_status_one": "<speak><p>The {{ which }} garage door is {{ state }}</p></speak>",
+  "garage_door_open": "<speak><p>The {{ which }} garage door is already open. would you like me to close it?</p></speak>",
+  "garage_door_close": "<speak><p>The {{ which }} garage door is already closed. would you like me to open it?</p></speak>",
+  "garage_door_unknown": "<speak><p>The {{ which }} garage door is in an unknown state.  Please check the garage and try again.</p></speak>",
+  "garage_help": "<speak><p>You can ask the garage door to report status or to open or to close.</p></speak>",
+  "garage_goodbye": "<speak><p>OK. May the force be with you.</p></speak>",
+  "garage_weather": "<speak><p>The temperature is {{ temp }} degrees, the humidity is {{ humidity }} percent, and it feels like {{ heat_index }} degrees in the garage.</p></speak>"
+}
