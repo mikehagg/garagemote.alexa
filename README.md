@@ -18,9 +18,9 @@ In order to implement this project you should have an existing GarageMote operat
   * Link to a certificate and ensure you have saved private, public and root files
 * Set up an Alexa Skill at developer.amazon.com
   * Sample Invocation, Intent and Slots Interaction model JSON in alexa folder
-* Modify LowPowerLab metrics.js file
+* Modify LowPowerLab metrics.js file - call out https://github.com/LowPowerLab/RaspberryPi-Gateway and add diff!
   * TODO: figure out how to present diff in Github/README
-* Modify settings.json5 to add additional settings
+* Modify settings.json5 to add additional settings - call out https://github.com/LowPowerLab/RaspberryPi-Gateway and add diff!
   * TODO: Add example file... without any personal info!
 * Deploy Python Code to AWS Lambda
   * Ensure you a VirtualEnv installed 
