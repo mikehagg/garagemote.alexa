@@ -6,5 +6,7 @@ This project enables the LowPowerLab GarageMote to be controlled via an Amazon E
 
 Links:
 GarageMote: https://lowpowerlab.com/guide/garagemote/
+
 MightyHat: https://lowpowerlab.com/guide/mightyhat/
+
 LowPowerLab IoT Gateway: https://lowpowerlab.com/guide/gateway/
