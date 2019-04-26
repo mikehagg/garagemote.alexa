@@ -12,12 +12,12 @@ In order to implement this project you should have an existing GarageMote operat
 * Set up an Alexa Skill at developer.amazon.com
   * Sample Invocation, Intent and Slots Interaction model JSON in alexa folder
 * Modify LowPowerLab metrics.js file
-  * TODO: figure out how to present diff in Github
+  * TODO: figure out how to present diff in Github/README
 * Deploy Python Code to AWS Lambda
   * Ensure you a VirtualEnv installed 
   * Ensure you have all requirements installed
   * Ensure you have run AWS Config and entered your AWS Key/Secret
-  * Run `sh compress-lambda.sh` to push code to your Lambda
+  * Run `sh compress_lambda.sh` to push code to your Lambda
   * Declare Environmental Variables
     * Variables Here
 
