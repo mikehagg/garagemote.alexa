@@ -20,6 +20,8 @@ In order to implement this project you should have an existing GarageMote operat
   * Sample Invocation, Intent and Slots Interaction model JSON in alexa folder
 * Modify LowPowerLab metrics.js file
   * TODO: figure out how to present diff in Github/README
+* Modify settings.json5 to add additional settings
+  * TODO: Add example file... without any personal info!
 * Deploy Python Code to AWS Lambda
   * Ensure you a VirtualEnv installed 
   * Ensure you have all requirements installed
