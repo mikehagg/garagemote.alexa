@@ -18,12 +18,12 @@ In order to implement this project you should have an existing GarageMote operat
   * Link to a certificate and ensure you have saved private, public and root files
 * Set up an Alexa Skill at developer.amazon.com
   * Sample Invocation, Intent and Slots Interaction model JSON in alexa folder
-* Modify LowPowerLab metrics.js file - call out https://github.com/LowPowerLab/RaspberryPi-Gateway and add diff!
-  * TODO: figure out how to present diff in Github/README
-* Modify settings.json5 to add additional settings - call out https://github.com/LowPowerLab/RaspberryPi-Gateway and add diff!
-  * TODO: Add example file... without any personal info!
-* Merge metrics.diff into metrics.js
-  * Umm, sure it's possible TODO: look up the code dummy!
+* Copy LowPowerLab_FileModes metrics.js to Gateway directory. 
+  * Alternately you could copy the appropriate changes into your metrics.js file.
+    * Lines 29-93 control reading and writing to AWS IoT thing.  There is also a listener that will detect when the desired  shadow state does not match the reported shadow state
+    * Lines 300-340 defines the event that is triggered when the IoT gateway detects a state change in the Garage Door.
+* Modify settings.json5 to add additional settings - call out https://github.com/LowPowerLab/RaspberryPi-Gateway
+  * Lines 134-153 were added to support the settings needed to connect to AWS 
 * Deploy Python Code to AWS Lambda
   * Ensure you a VirtualEnv installed 
   * Ensure you have all requirements installed
