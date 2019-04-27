@@ -150,6 +150,6 @@
         value: "unique_iot_client_name",
         description: "Client Name used to establish connection to AWS IOT MQTT Shadow"
       }
-    },
+    }
   }
 }
