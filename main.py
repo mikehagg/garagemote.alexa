@@ -1,5 +1,5 @@
 # ********************************************************************************************
-# Copyleft Mike Haggerty (2019)
+# Copyright Mike Haggerty (2019)
 # Feel free to shameless steal, but please apply credit where credit is due!
 # ********************************************************************************************
 

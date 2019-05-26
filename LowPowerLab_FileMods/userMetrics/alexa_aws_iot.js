@@ -4,6 +4,9 @@
 // init AWS-IOT Connection
 // Helper function to send JSON updates to AWS IoT
 // ******************************************************************************************************************************************
+// ********************************************************************************************
+// Copyright Mike Haggerty (2019)
+// ********************************************************************************************
 
 var awsIot = require('aws-iot-device-sdk');
 thingName = settings.aws.aws_IOT_thing_name.value; // AWS IoT Thing Name
