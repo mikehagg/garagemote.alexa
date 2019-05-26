@@ -13,7 +13,7 @@ This project enables the LowPowerLab GarageMote to be controlled via an Amazon E
 
 ## Details
 
-In order to implement this project you should have an existing GarageMote operating via a LowPowerLab IoT Gateway.  To fully implement you will need to:
+In order to implement this project you should have an existing GarageMote operating via a LowPowerLab IoT Gateway (works with v9!).  To fully implement you will need to:
 * Set up AWS IoT "Thing"
   * Link to a certificate and ensure you have saved private, public and root files
   * Copy the following files to /home/pi/certs/ :
