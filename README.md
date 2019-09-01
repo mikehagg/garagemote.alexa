@@ -39,8 +39,8 @@ In order to implement this project you should have an existing GarageMote operat
 ## IoT Gateway
 * Install aws-iot-device-sdk
     * `npm install aws-iot-device-sdk`
-* In the Garage Node create
-    * Add `Garage : AWSUpdate`
+* In the Garage Node setup https://<IP or FQDN>/#nodedetails
+    * Add `Garage : AWSUpdate` as an Event
 
 ## Links:
 * GarageMote: https://lowpowerlab.com/guide/garagemote/
