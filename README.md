@@ -17,8 +17,8 @@ In order to implement this project you should have an existing GarageMote operat
 * Set up AWS IoT "Thing"
   * Link to a certificate and ensure you have saved private, public and root files
   * Copy the following files to /home/pi/certs/ :
-    * Rename `<certID>-private.pem.key` to `garage.private.key`
-    * Rename `<certID>-certificate.pem.crt` to `garage.cert.pem`
+    * Rename `<certID>-private.pem.key` to `garage-private.pem.key`
+    * Rename `<certID>-certificate.pem.crt` to `garage-certificate.pem.crt`
     * Create `root-CA.crt` from the appropriate root cert
   * Alternately, you could change the file names in userMetrics/alexa_aws_iot.js file.
 * Set up an Alexa Skill at developer.amazon.com
@@ -35,8 +35,35 @@ In order to implement this project you should have an existing GarageMote operat
     * IOT_ENDPOINT - your IoT Endpoint (example: xxxxxxxxxxx.iot.us-east-1.amazonaws.com)
     * THING_NAME - Name of thing in IoT (example: GarageDoor)
     * THING_TOPIC - Name of thing topic (example: /GarageDoor)
+    
+## IoT Gateway
+* Install aws-iot-device-sdk
+    * `npm install aws-iot-device-sdk`
+* In the Garage Node create
+    * Add `Garage : AWSUpdate`
 
 ## Links:
 * GarageMote: https://lowpowerlab.com/guide/garagemote/
 * MightyHat: https://lowpowerlab.com/guide/mightyhat/
 * LowPowerLab IoT Gateway: https://lowpowerlab.com/guide/gateway/
+
+## Troubleshooting
+* AWS Shadow is not updating.
+    * Check that the certificate has a policy attached that allows the proper actions.  Example:
+    `{
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": [
+            "iot:Publish",
+            "iot:Subscribe",
+            "iot:Connect",
+            "iot:Receive"
+          ],
+          "Effect": "Allow",
+          "Resource": [
+            "*"
+          ]
+        }
+      ]
+    }`

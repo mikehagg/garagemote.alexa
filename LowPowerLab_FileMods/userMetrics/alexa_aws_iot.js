@@ -12,8 +12,8 @@ var awsIot = require('aws-iot-device-sdk');
 thingName = settings.aws.aws_IOT_thing_name.value; // AWS IoT Thing Name
 
 var device = awsIot.thingShadow({
-    keyPath: '/home/pi/certs/garage.private.key',  // Download during AWS IoT Device creation
-    certPath: '/home/pi/certs/garage.cert.pem',  // Download during AWS IoT Device creation
+    keyPath: '/home/pi/certs/garage-private.pem.key',  // Download during AWS IoT Device creation
+    certPath: '/home/pi/certs/garage-certificate.pem.crt',  // Download during AWS IoT Device creation
     caPath: '/home/pi/certs/root-CA.crt',  // Download during AWS IoT Device creation
     clientId: settings.aws.aws_IOT_client_name.value, // Should be a unique Client name.
     host: settings.aws.aws_IOT_endpoint.value, // Set AWS IOT Endpoint in settings.json5
