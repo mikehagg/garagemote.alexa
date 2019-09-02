@@ -67,3 +67,12 @@ In order to implement this project you should have an existing GarageMote operat
         }
       ]
     }`
+* When I ask for garage door to report status, I get a response of "Large Garage door is null and small garage door is null"
+    * The garage door names are currently hardcoded (yeah not the best) to use "large" and "small".  You also need to add an attribute to the AWS IoT shadow of "name" for example:
+    `"node_42": {
+          "type": "garage",
+          "node_id": 42,
+          "status": "closed",
+          "last_updated": 1567448966256,
+          "name": "small"
+    }` 
